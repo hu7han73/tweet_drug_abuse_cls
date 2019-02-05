@@ -39,7 +39,7 @@ The object of the project is to train a model (or, actually, the ensemble of a c
   Temp files can go there.
   
 ##### word_vectors (/word_vectors):
-  You can download pre-trained word vectors from these links:
+  You can download pre-trained word vectors from these links (each is weighted at several Gigs, prepare some disk space :):
   
   * word2vec trained on GoogleNews dataset: https://www.dropbox.com/s/y5vhbe53d4w0wuk/GoogleNews-vectors-negative300.bin?dl=0 (source:https://github.com/mmihaltz/word2vec-GoogleNews-vectors).
   
