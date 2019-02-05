@@ -1,7 +1,7 @@
 # tweet_drug_abuse_cls
 Demo code for classifing drug abuse tweets using ensembled CNN
 
-###### This repo is requested as a demo project for learning deep learning. It is derived from the code for an academic projects of mine.
+This repo is requested as a demo project for learning deep learning. It is derived from the code for an academic projects of mine.
 
 I simplified the original code I used so it will be easier to run and read. However, this version is not tested and may (certainly) contain bugs. Please try to debug yourself, but I can help when necessary.
 
