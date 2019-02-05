@@ -40,35 +40,35 @@ The object of the project is to train a model (or, actually, the ensemble of a c
   
 ##### word_vectors (/word_vectors):
   You can download pre-trained word vectors from these links:
-    word2vec trained on GoogleNews dataset: https://www.dropbox.com/s/y5vhbe53d4w0wuk/GoogleNews-vectors-negative300.bin?dl=0 (source:https://github.com/mmihaltz/word2vec-GoogleNews-vectors).
-    word2vec trained on tweets by Godin: https://www.dropbox.com/s/1urozhtu3wya3m6/Godin_word2vec_twitter_model.bin?dl=0 (source: https://fredericgodin.com/software/).
-    glove trained on tweets: https://www.dropbox.com/s/f40nydv41sn5a8k/glove.42B.300d.txt?dl=0 (source: https://nlp.stanford.edu/projects/glove/).
-    word2vec trained on drug related tweets: https://www.dropbox.com/s/zfqzr6s2n809aqw/DSM_word2vec_model.bin?dl=0 (source: https://www.sciencedirect.com/science/article/pii/S2352340916307168).
+    * word2vec trained on GoogleNews dataset: https://www.dropbox.com/s/y5vhbe53d4w0wuk/GoogleNews-vectors-negative300.bin?dl=0 (source:https://github.com/mmihaltz/word2vec-GoogleNews-vectors).
+    * word2vec trained on tweets by Godin: https://www.dropbox.com/s/1urozhtu3wya3m6/Godin_word2vec_twitter_model.bin?dl=0 (source: https://fredericgodin.com/software/).
+    * glove trained on tweets: https://www.dropbox.com/s/f40nydv41sn5a8k/glove.42B.300d.txt?dl=0 (source: https://nlp.stanford.edu/projects/glove/).
+    * word2vec trained on drug related tweets: https://www.dropbox.com/s/zfqzr6s2n809aqw/DSM_word2vec_model.bin?dl=0 (source: https://www.sciencedirect.com/science/article/pii/S2352340916307168).
     
 ##### Core files (/):
-  "ark-tweet-nlp-0.3.2.jar": The trained tweet POS-tagger, check http://www.cs.cmu.edu/~ark/TweetNLP/.
-  "CMUTweetTagger.py": Python wrapper of the POs tagger.
-  "runTagger.sh": Used by POS tagger.
-  "ensemble_ml_models.py": Train machine learning models, make predictions on validation and testing dataset.
-  "ensemble_models.py": Train CNN models, make predictions on validation and testing dataset.
-  "feature_expansion.py": Perform feature expansion.
-  "LSTM_CONV.py": Build tensorflow models (CNN, LSTM, etc). Including a lot of models, but only some of them are actually used.
-  "NB_SVM.py": Build ML models.
-  "preTrainedReader.py": Helper library to read pre-trained word vectors.
-  "read_ml_results.py": After ML models are trained, use this to ensemble and evaluate the results.
-  "read_results.py": After CNN models are trained, use this to ensemble and evaluate the results.
-  "TemporalMeanPooling.py": A component of some LSTM models, not actually used but is here for dependency.
-  "training_params.py": Common parameters for the models and the training process.
-  "training_utils.py": Some helper functions for reading data, preprocessing data, etc.
+  * "ark-tweet-nlp-0.3.2.jar": The trained tweet POS-tagger, check http://www.cs.cmu.edu/~ark/TweetNLP/.
+  * "CMUTweetTagger.py": Python wrapper of the POs tagger.
+  * "runTagger.sh": Used by POS tagger.
+  * "ensemble_ml_models.py": Train machine learning models, make predictions on validation and testing dataset.
+  * "ensemble_models.py": Train CNN models, make predictions on validation and testing dataset.
+  * "feature_expansion.py": Perform feature expansion.
+  * "LSTM_CONV.py": Build tensorflow models (CNN, LSTM, etc). Including a lot of models, but only some of them are actually used.
+  * "NB_SVM.py": Build ML models.
+  * "preTrainedReader.py": Helper library to read pre-trained word vectors.
+  * "read_ml_results.py": After ML models are trained, use this to ensemble and evaluate the results.
+  * "read_results.py": After CNN models are trained, use this to ensemble and evaluate the results.
+  * "TemporalMeanPooling.py": A component of some LSTM models, not actually used but is here for dependency.
+  * "training_params.py": Common parameters for the models and the training process.
+  * "training_utils.py": Some helper functions for reading data, preprocessing data, etc.
 
 #### How to run:
-  First setup all the environments, and clone the repo. 
-  Read all the related papers and the code so you understand the big picture.
-  If you want to try some other preprocess methods, you can read the raw tweets and write your own code to preprocess them. Otherwise, you can use clean_tweet column in the dataset.
-  Run the "feature_expansion.py" to get the expanded features ready.
-  Run the "ensemble_models.py" and the "ensemble_ml_models.py" to train models.
-  Run the "read_results.py" and the "read_ml_results.py" to evaluate the models.
-  Do anything you think is interesting.
+  * First setup all the environments, and clone the repo. 
+  * Read all the related papers and the code so you understand the big picture.
+  * If you want to try some other preprocess methods, you can read the raw tweets and write your own code to preprocess them. Otherwise, you can use clean_tweet column in the dataset.
+  * Run the "feature_expansion.py" to get the expanded features ready.
+  * Run the "ensemble_models.py" and the "ensemble_ml_models.py" to train models.
+  * Run the "read_results.py" and the "read_ml_results.py" to evaluate the models.
+  * Do anything you think is interesting.
   
 #### Again, there most likely will be bugs in the code. Don't expect everything works on first try.
 
