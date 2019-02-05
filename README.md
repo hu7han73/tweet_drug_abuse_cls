@@ -3,7 +3,7 @@ Demo code for classifing drug abuse tweets using ensembled CNN
 
 This repo is requested as a demo project for learning deep learning. It is derived from the code for an academic projects of mine.
 
-I simplified the original code I used so it will be easier to run and read. However, this version is not tested and may (certainly) contain bugs. Please try to debug yourself, but I can help when necessary.
+I simplified the original code (it was and is a big mess) I used so it will be easier to run and read. However, this version is not tested and may (certainly) contain bugs. Please try to debug yourself, but I can help when necessary.
 
 The object of the project is to train a model (or, actually, the ensemble of a collection of models) that can classify tweets as drug-abuse related or non drug-abuse related. We tried to compare the performance between traditional machine learning methods, such as SVM, RandomForest, and NaiveBayes, and CNN-based methods, including word-level CNN and char-level CNN. The project also explores how dataset imbalanceness (as it would be in real world, more negative labels than positive labels) impacts model performances. The traditional ML methods are described in this paper: "Social Media Mining for Toxicovigilance: Automatic Monitoring of Prescription Medication Abuse from Twitter." The CNN models are described in the paper "cnn_models_paper.pdf", which you can find in the repo.
 
