@@ -51,7 +51,7 @@ The object of the project is to train a model (or, actually, the ensemble of a c
     
 ##### Core files (/):
   * "ark-tweet-nlp-0.3.2.jar": The trained tweet POS-tagger, check http://www.cs.cmu.edu/~ark/TweetNLP/.
-  * "CMUTweetTagger.py": Python wrapper of the POs tagger.
+  * "CMUTweetTagger.py": Python wrapper of the POS tagger.
   * "runTagger.sh": Used by POS tagger.
   * "ensemble_ml_models.py": Train machine learning models, make predictions on validation and testing dataset.
   * "ensemble_models.py": Train CNN models, make predictions on validation and testing dataset.
@@ -68,7 +68,7 @@ The object of the project is to train a model (or, actually, the ensemble of a c
 #### How to run:
   * First setup all the environments, and clone the repo. 
   * Read all the related papers and the code so you understand the big picture.
-  * If you want to try some other preprocess methods, you can read the raw tweets and write your own code to preprocess them. Otherwise, you can use clean_tweet column in the dataset.
+  * If you want to try some other preprocess methods, you can read the raw tweets and write your own code to preprocess them. Otherwise, you can use clean tweets in the dataset.
   * Run the "feature_expansion.py" to get the expanded features ready.
   * Run the "ensemble_models.py" and the "ensemble_ml_models.py" to train models.
   * Run the "read_results.py" and the "read_ml_results.py" to evaluate the models.
